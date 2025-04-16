@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "BOSS直聘自動回覆",
+  "version": "1.0",
+  "description": "亂槍打鳥的HR都該先跟腳本聊聊",
+  "permissions": [
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://www.zhipin.com/web/geek/chat*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.zhipin.com/web/geek/chat*"],
+      "js": ["content.js"]
+    }
+  ]
+}
